@@ -1,347 +1,281 @@
-# Individuell loggbok – Webbshop
+# Individuell loggbok – Agil Webbshop
 
-Vi har arbetat i enveckas-sprintar och följt ett agilt arbetssätt med sprintplanering, dagliga avstämningar, sprint review och retro. Vi har använt Trello för att hantera backloggen och GitHub med branches och pull requests för vårt kodarbete.
+**Projekt:** Agil Webbshop  
+**Period:** Vecka 39–44  
+**Sprintar:** 1–6
 
 ---
 
-## Sprint 1 – vecka 39
+## Sprint 1 – Vecka 39
 
 ### Vad jag arbetade med
 
-Under den första sprinten arbetade jag med **FE-04 – Alla kan köra frontend lokalt**, som var en gemensam uppgift för hela gruppen.
+Under den första sprinten började vi arbeta med vårt gemensamma projekt Agil Webbshop. Vi gick igenom projektets mål, planerade vilka funktioner som behövdes och delade upp arbetet mellan frontend och backend.
 
-Jag klonade frontendprojektet från GitHub, installerade de beroenden som behövdes och fick React-applikationen att fungera lokalt på min dator.
+Jag började arbeta med frontend och bekantade mig med projektets struktur i React. Jag undersökte hur komponenter fungerar och hur vi skulle bygga upp webbshoppen.
 
-Jag klonade även projektets olika mikrotjänster för att börja förstå hur hela systemet var uppbyggt. Jag började sätta mig in i hur frontend, auth-service, product-service och order-service skulle kommunicera med varandra.
+Jag arbetade också med GitHub och lärde mig hur man använder branches, commits, push och pull för att samarbeta i samma projekt.
 
-Under den här sprinten lärde jag mig också mer om Git, GitHub och hur vi skulle arbeta med branches i projektet.
+### Eventuella problem och hur jag löste dem
 
-### Utmaningar och lösningar
+I början var det svårt att förstå hur frontend och backend skulle kommunicera med varandra.
 
-I början var en utmaning att förstå hur alla projekt skulle startas och vilka portar de olika tjänsterna använde.
+Jag behövde också lära mig mer om projektstrukturen och hur vi skulle arbeta med GitHub utan att skapa konflikter i koden.
 
-Jag testade därför tjänsterna en i taget och kontrollerade att de kunde starta lokalt innan jag gick vidare. På så sätt fick jag bättre förståelse för projektstrukturen och vilka kommandon som behövdes för frontend och backend.
+Jag försökte lösa problemen genom att läsa koden, testa olika saker och undersöka hur de olika delarna fungerade.
 
 ### Samarbete och agilt arbete
 
-På måndagen hade vi sprintplanering där vi gick igenom backloggen och fördelade uppgifterna mellan oss.
+Under den första sprinten deltog jag i gruppens planering och fick bättre förståelse för det agila arbetssättet.
 
-Under veckan hade vi dagliga avstämningar där vi berättade vad vi arbetade med, vad vi skulle göra härnäst och om vi hade stött på några problem.
+Vi använde en backlogg för att organisera våra uppgifter och planerade vad vi skulle fokusera på under sprinten.
 
-Vi använde Trello för att följa vilka uppgifter som var pågående och vilka som var färdiga. På fredagen hade vi sprint review där vi visade läraren vad vi hade gjort under veckan.
+Jag lärde mig att det är viktigt att dela upp stora uppgifter i mindre delar och kommunicera med gruppen.
 
 ---
 
-## Sprint 2 – vecka 40
+## Sprint 2 – Vecka 40
 
 ### Vad jag arbetade med
 
-Under den här sprinten började jag arbeta mer med **auth-service**, som blev mitt huvudsakliga ansvarsområde i projektet.
+Under den här sprinten arbetade jag med frontend och autentisering.
 
-Jag arbetade med **FE-08 – Returnera inloggningsdata som DTO**. Vid inloggning behövde auth-service returnera mer information om användaren, bland annat token, användarnamn och roller.
+Jag arbetade med att koppla frontend till vår auth-service för att användare skulle kunna logga in i webbshoppen.
 
-Jag arbetade även med **FE-10 – Visa välkomstsida efter inloggning**. Jag kopplade informationen från auth-service till frontend så att det gick att visa vem som var inloggad och vilken roll användaren hade.
+Jag arbetade också med att hantera roller för inloggade användare, till exempel ADMIN och USER.
 
-Jag arbetade också med rollerna `USER` och `ADMIN` och började få en bättre förståelse för JWT och autentisering.
+Syftet var att systemet skulle kunna identifiera vem som var inloggad och vilken behörighet användaren hade.
 
-### Utmaningar och lösningar
+Jag arbetade med att visa rätt information och funktioner beroende på användarens roll.
 
-En utmaning var att förstå hur informationen som skickades från auth-service skulle användas i frontend.
+Jag arbetade även med olika delar av frontend för att förbättra hur webbshoppen fungerade.
 
-Jag behövde förstå hur JWT-token, användarinformation och roller hängde ihop. Jag testade därför inloggningsflödet steg för steg och kontrollerade vad auth-service faktiskt returnerade.
+### Eventuella problem och hur jag löste dem
 
-När jag hade förstått hur svaret var uppbyggt kunde jag koppla rätt information till frontend.
+En utmaning var att förstå hur autentisering fungerar mellan frontend och backend.
+
+Jag behövde undersöka hur frontend kunde få information om den inloggade användaren och hur rollen skulle användas för att styra vilka funktioner som visades.
+
+Jag testade inloggningen och undersökte hur API-anropen fungerade.
+
+Genom detta fick jag bättre förståelse för hur autentisering och behörigheter fungerar i en webbapplikation.
 
 ### Samarbete och agilt arbete
 
-Under sprintplaneringen gick vi igenom vilka delar som behövdes för att få inloggningsflödet att fungera.
+Under sprinten fortsatte vi att arbeta med våra uppgifter i sprintbackloggen.
 
-På våra dagliga avstämningar diskuterade vi hur frontend och backend skulle kopplas ihop. Eftersom auth-service användes av flera delar i systemet behövde jag kommunicera med gruppmedlemmarna om hur inloggningssvaret fungerade.
+Jag lärde mig att frontend och backend måste samarbeta för att inloggningen och rollerna ska fungera korrekt.
 
-På sprint review kunde vi visa hur autentisering och användarinformation fungerade.
+Det var viktigt att kommunicera med gruppen om vilka API-anrop och vilken användarinformation frontend behövde.
 
 ---
 
-## Sprint 3 – vecka 41
+## Sprint 3 – Vecka 41
 
 ### Vad jag arbetade med
 
-Jag fortsatte arbeta med auth-service och integrationen mellan frontend och backend.
+Under den här sprinten arbetade jag med att förbättra användargränssnittet och produktfunktionerna i webbshoppen.
 
-Jag arbetade med att visa användarens roller och vem som var inloggad genom funktionaliteten i auth-service.
+En av uppgifterna var att ta bort en extra utloggningsknapp eftersom vi hade två logout-knappar.
 
-Jag arbetade också med **FE-25 – Frontend ska kunna visa imageUrl för produkter** och med produktvisningen i frontend.
+Jag tog bort den dubbla knappen så att användaren bara skulle se en tydlig utloggningsknapp.
 
-Jag arbetade även med funktionen där användaren kan klicka på ett produktkort och komma till en detaljvy för den aktuella produkten.
+Jag arbetade också med funktionen som gör att användaren kan klicka på en produkt och se mer information om den.
 
-Under sprinten deltog jag också i arbetet med att kontrollera att **email-service kunde köras lokalt**.
+Syftet var att kunden skulle kunna öppna en produkt och se dess detaljer innan ett eventuellt köp.
 
-Jag fortsatte dessutom att köra de olika mikrotjänsterna lokalt för att få bättre förståelse för hur de kommunicerade med varandra.
+Det här arbetet hjälpte mig att förstå mer om React-komponenter, produktdata och navigering mellan olika vyer.
 
-### Utmaningar och lösningar
+### Eventuella problem och hur jag löste dem
 
-En utmaning var att de olika mikrotjänsterna använde olika portar och hade olika konfigurationer.
+Ett problem var att webbshoppen hade dubbla utloggningsknappar, vilket gjorde gränssnittet mindre tydligt.
 
-Jag behövde förstå vilken tjänst som skulle anropa vilken annan tjänst och på vilken port.
+Jag undersökte var knapparna visades och arbetade med att ta bort den onödiga knappen.
 
-För att felsöka testade jag först tjänsterna separat och sedan tillsammans. Det gjorde det lättare att hitta var ett fel uppstod.
+Jag behövde också förstå hur vi kunde visa information om en specifik produkt när användaren klickade på den.
 
-Under den här sprinten blev jag mer van vid att felsöka ett system som består av flera mikrotjänster.
+Genom att undersöka komponenterna och hur produktinformationen hanterades kunde jag arbeta vidare med funktionen.
 
 ### Samarbete och agilt arbete
 
-Vi fortsatte använda Trello för att följa våra uppgifter.
+Under sprinten arbetade jag med konkreta uppgifter som förbättrade användarupplevelsen.
 
-Under våra dagliga avstämningar berättade vi vad vi arbetade med och om någon hade problem som blockerade arbetet.
+Jag lärde mig att även mindre förbättringar är viktiga för slutresultatet.
 
-Eftersom flera funktioner var beroende av varandra behövde vi hjälpa varandra med testning och integration mellan tjänsterna.
-
-På sprint review gick vi igenom de funktioner som hade blivit färdiga.
+Genom att dela upp arbetet i mindre uppgifter kunde jag fokusera på en funktion i taget och kontrollera resultatet.
 
 ---
 
-## Sprint 4 – vecka 42
+## Sprint 4 – Vecka 42
 
 ### Vad jag arbetade med
 
-Under den här sprinten arbetade jag med **FE-14 – Undersök betalning för webbshoppen**.
+Under den här sprinten arbetade jag med en funktion för administratören och med en undersökning av betalningslösningar.
 
-Jag undersökte olika betalningslösningar och tittade bland annat på **Klarna och Swish** för att förstå hur de skulle kunna användas i vår webbshop.
+Jag arbetade med att göra det möjligt för admin att ladda upp bilder till produkter.
 
-Jag undersökte hur ett betalningsflöde skulle kunna fungera och vilka delar som skulle behöva hanteras i frontend och backend.
+Syftet var att administratören skulle kunna lägga till produktbilder och göra produkterna tydligare för kunderna.
 
-Jag skapade även ett dokument i frontendprojektet där jag dokumenterade det jag hade undersökt om betalningslösningarna, så att gruppen kunde ta del av informationen.
+Jag fick arbeta med filuppladdning i frontend och förstå hur bildinformation ska skickas och hanteras.
 
-Syftet med uppgiften var framför allt att undersöka och förstå möjliga betalningslösningar, inte att implementera en färdig betalningsfunktion.
+Jag arbetade också med uppgiften **Undersök betalning för webbshoppen**.
 
-Jag fortsatte samtidigt att arbeta med auth-service och lokal testning av mikrotjänsterna.
+Jag undersökte tre olika betalningslösningar:
 
-Jag testade hur frontend, auth-service, product-service och order-service fungerade tillsammans och började få en bättre förståelse för hur autentisering behöver fungera när flera mikrotjänster är inblandade.
+- Stripe
+- Klarna
+- Swish
 
-Under den här perioden började vi också diskutera behovet av en gemensam gateway.
+**Stripe:** Jag undersökte hur Stripe Checkout fungerar, hur backend kan skapa en Checkout Session och hur man kan testa betalningar med testkort utan riktiga pengar. Jag såg att Stripe har bra dokumentation och en färdig checkout-sida, men kräver API-nycklar och hantering av betalningsstatus.
 
-### Utmaningar och lösningar
+**Klarna:** Jag undersökte hur Klarna kan användas för direktbetalning, betala senare och delbetalning. Jag läste om Klarnas testmiljö Playground och hur backend behöver kommunicera med Klarnas API.
 
-En utmaning med betalningsuppgiften var att förstå hur externa betalningslösningar som Klarna och Swish skulle kunna kopplas till vårt system.
+**Swish:** Jag undersökte hur en betalning kan startas från webbshoppen och godkännas i Swish-appen. Jag såg att Swish är ett vanligt betalningsalternativ i Sverige, men att integrationen kräver mer teknisk konfiguration.
 
-Jag behövde undersöka vad som skulle ske i frontend och vad som skulle behöva hanteras i backend. Genom att läsa, testa och dokumentera alternativen fick jag en bättre förståelse för hur ett betalningsflöde kan byggas upp.
+Jag dokumenterade fördelar, nackdelar, testmiljöer och vad som skulle behövas i frontend och backend.
 
-En annan utmaning var att det började bli många olika adresser och portar att hålla reda på när frontend kommunicerade med flera mikrotjänster.
+### Eventuella problem och hur jag löste dem
 
-Det gjorde felsökningen svårare eftersom ett fel kunde ligga i frontend, CORS-konfigurationen eller i någon av backend-tjänsterna.
+En utmaning med bilduppladdningen var att förstå hur frontend ska hantera en bildfil och skicka den vidare till backend.
 
-Jag lärde mig därför att felsöka steg för steg genom att först kontrollera att varje tjänst fungerade separat och sedan testa kommunikationen mellan tjänsterna.
+När jag undersökte betalningslösningarna upptäckte jag att de fungerar på olika sätt och har olika krav.
+
+Det var särskilt viktigt att förstå skillnaden mellan vad frontend ska göra och vad backend ansvarar för.
+
+Jag använde dokumentationen från Stripe, Klarna och Swish för att undersöka alternativen och jämföra deras fördelar och nackdelar.
+
+Betalningsuppgiften var en undersökning och ingen färdig integration.
 
 ### Samarbete och agilt arbete
 
-Under sprintplaneringen valde vi betalningslösningen som en undersökningsuppgift.
+Under den här sprinten fick jag bättre förståelse för varför undersökning och planering är viktiga delar av agil utveckling.
 
-Jag dokumenterade det jag kom fram till så att resten av gruppen kunde ta del av resultatet.
+Innan man börjar utveckla en större funktion behöver man förstå vilka alternativ som finns och vilka tekniska krav som gäller.
 
-Under våra avstämningar diskuterade vi hur en framtida betalningslösning skulle kunna passa in i systemet och hur vår arkitektur kunde förbättras.
+Min betalningsundersökning kunde användas som underlag när gruppen skulle diskutera en framtida betalningslösning.
 
-Vi började också diskutera behovet av att samla kommunikationen mellan frontend och backend genom en gateway.
-
-På sprint review kunde vi visa vad som hade undersökts även om någon färdig betalningsintegration inte implementerades.
+Jag lärde mig också att vissa uppgifter kräver samarbete mellan frontend och backend.
 
 ---
 
-## Sprint 5 – vecka 43
+## Sprint 5 – Vecka 43
 
 ### Vad jag arbetade med
 
-Under den här sprinten arbetade jag med **FE-32 – Gateway-applikation i backend**.
+Under den här sprinten arbetade jag med tester i frontend.
 
-Alla i gruppen fick skapa en egen gateway för att lära oss hur en gateway och reverse proxy fungerar.
+Jag använde **Vitest och MSW (Mock Service Worker)** för att testa webbshoppens funktioner.
 
-Jag skapade och testade min egen lösning för att förstå hur requests från frontend kunde skickas vidare till rätt mikrotjänst.
+Vitest användes för att köra automatiserade tester och kontrollera att funktioner och komponenter fungerade som förväntat.
 
-Efter att vi hade testat våra olika lösningar jämförde vi dem i gruppen och valde en gemensam gateway som skulle användas i projektet.
+Jag arbetade även med MSW för att simulera API-anrop och skapa testsvar.
 
-Jag klonade sedan den gemensamma `gateway-agil` och började köra den tillsammans med de andra mikrotjänsterna lokalt.
+Med MSW kunde jag testa frontend utan att alltid behöva vara beroende av att backend var igång.
 
-Jag körde auth-service, product-service, order-service, gateway och frontend tillsammans för att testa hur hela systemet fungerade.
+Jag fortsatte också att arbeta med olika delar av frontend och undersöka hur funktionerna samverkade.
 
-Jag arbetade också med testning under sprinten.
+### Eventuella problem och hur jag löste dem
 
-Jag deltog i **FE-38 – Undersök integrationstestning** och arbetade med **FE-39 – Konfigurera MSW** tillsammans med andra i gruppen.
+I början var det svårt att förstå hur testerna skulle skrivas och hur MSW skulle användas.
 
-Vi använde MSW för att simulera backend-svar så att frontend kunde testas utan att alla riktiga backend-tjänster behövde vara igång.
+Jag behövde lära mig hur man simulerar API-svar och hur tester kan kontrollera att frontend visar rätt information.
 
-Jag arbetade med och körde tester med Vitest och React Testing Library.
+Jag undersökte testkoden och testade olika lösningar för att förstå hur verktygen fungerade.
 
-Frontend hade fyra testfiler med totalt åtta tester, och samtliga tester passerade.
-
-### Utmaningar och lösningar
-
-En utmaning var att förstå vad gatewayen faktiskt gjorde mellan frontend och de olika mikrotjänsterna.
-
-Genom att först skapa en egen gateway och sedan arbeta med den gemensamma gatewayen fick jag en mycket bättre förståelse för hur flödet fungerar.
-
-Jag behövde också förstå skillnaden mellan att testa mot den riktiga backendmiljön och att använda MSW för att simulera API-svar.
-
-Jag arbetade stegvis och använde testresultaten för att kontrollera att funktionerna fungerade som förväntat.
+Genom arbetet fick jag bättre kunskaper om automatiserade tester och varför de är viktiga för kodens kvalitet.
 
 ### Samarbete och agilt arbete
 
-Gatewayuppgiften var ett bra exempel på hur vi arbetade gemensamt med lärande.
+Under sprinten förstod jag bättre hur tester kan hjälpa hela teamet.
 
-Alla fick först prova att skapa en egen lösning. Därefter jämförde vi våra lösningar och valde en gemensam gateway som hela gruppen kunde använda.
+Om vi testar funktionerna regelbundet kan vi upptäcka problem tidigare och minska risken för att nya ändringar förstör befintliga funktioner.
 
-Vi hjälptes också åt med MSW och integrationstestningen och delade kunskap mellan oss.
+Jag lärde mig att testning är en viktig del av utvecklingsarbetet och att det inte räcker att bara skriva kod.
 
-Under våra dagliga avstämningar tog vi upp problem med gatewayen och mikrotjänsterna så att ingen skulle bli blockerad.
+Jag fick också bättre förståelse för hur man kan arbeta stegvis och kontrollera resultatet under en sprint.
 
 ---
 
-## Sprint 6 – vecka 44
+## Sprint 6 – Vecka 44
 
 ### Vad jag arbetade med
 
-Under den sista sprinten arbetade jag mycket med auth-service, felsökning, deployment, dokumentation och förbättringar i frontend.
+Under den här sprinten arbetade jag med att testa och felsöka vår webbshop efter att den hade publicerats på Render.
 
-### Auth-service och deployment
+Jag kontrollerade olika funktioner i frontend, bland annat inloggningen och produktvisningen.
 
-Jag arbetade med att driftsätta auth-service på Render.
+När jag loggade in som administratör fungerade inloggningen, men produkterna visades inte.
 
-I produktionsmiljön skulle auth-service använda PostgreSQL, medan jag lokalt använde H2.
+Jag fick felmeddelandet:
 
-Jag konfigurerade environment variables och Spring-konfigurationen för PostgreSQL och testade att auth-service kunde ansluta korrekt.
+**429 Too Many Requests**
 
-Jag arbetade också med JWT och JWKS.
+Jag började undersöka problemet med hjälp av Chrome DevTools.
 
-Jag testade endpointen `/auth/jwks`, som andra mikrotjänster använder för att verifiera JWT-token.
+Jag öppnade fliken Network och kontrollerade vilka API-anrop som skickades från frontend.
 
-Jag arbetade även med `/auth/me`, som används för att kontrollera vem som är inloggad.
+Jag såg att anropet till `/me` gav status 200, medan anropet till `/products` gav status 429.
 
-### Felsökning mellan mikrotjänster
+Jag undersökte även Headers och Response för att se vilken server som svarade och vilken endpoint som orsakade felet.
 
-Jag körde hela systemet lokalt och felsökte kommunikationen mellan auth-service, gateway, product-service och order-service.
+### Eventuella problem och hur jag löste dem
 
-Jag upptäckte bland annat problem med portar och konfiguration mellan tjänsterna.
+Det största problemet var att webbshoppen inte kunde hämta produkterna.
 
-Lokalt kördes:
+Jag upptäckte att anropet till vår API Gateway:
 
-- auth-service på port `8080`
-- product-service på port `8081`
-- order-service på port `8082`
-- gateway på port `9003`
-- frontend på port `5173`
+`https://gateway-agil.onrender.com/products`
 
-Jag felsökte ett problem där product-service inte kunde verifiera JWT eftersom tjänsten inte kunde hämta JWKS från auth-service.
+gav status 429.
 
-Jag testade `/auth/jwks` direkt för att kontrollera att auth-service fungerade och startade sedan om tjänsterna. Efter det fungerade kommunikationen igen.
+Det betyder att servern avvisade förfrågan på grund av en begränsning av antalet anrop.
 
-Jag arbetade även med problem i orderflödet. Gatewayen gav först 404 och senare 500. Jag kontrollerade gatewayens endpoint, order-service och konfigurationen mellan order-service och product-service steg för steg.
+Jag undersökte om felet kunde bero på frontend, backend eller API Gateway.
 
-### FE-43 – Skapa README-filer för systemets repositories
+Genom felsökningen kunde jag identifiera var felet visade sig, men jag hade ännu inte fastställt den exakta orsaken.
 
-Jag ansvarade för README-filen för auth-service.
-
-Jag dokumenterade bland annat:
-
-- vad auth-service används till
-- hur autentisering och JWT fungerar
-- vilka tekniker som används
-- hur tjänsten startas
-- relevanta endpoints
-- H2 för lokal utveckling
-- PostgreSQL i produktionsmiljön
-- kopplingen mellan auth-service och gateway
-
-### FE-44 – Informera om nödvändiga cookies
-
-Jag skapade en informationsbanner i frontend som informerar användaren om att webbshoppen använder en nödvändig cookie för inloggning.
-
-Bannern förklarar att cookien behövs för att användaren ska kunna vara inloggad och att den inte används för marknadsföring.
-
-Jag lade till en Stäng-knapp.
-
-När användaren stänger bannern sparas:
-
-`cookie-info-closed = true`
-
-i `localStorage`.
-
-Jag testade även funktionen i webbläsarens utvecklarverktyg för att kontrollera att värdet sparades korrekt och att bannern inte visades igen efter omladdning.
-
-### FE-45 – Finputsning av frontendens design
-
-Jag arbetade med mindre förbättringar av frontendens design.
-
-Jag upptäckte att det fanns två Logga ut-knappar i gränssnittet och tog bort den duplicerade knappen.
-
-Jag justerade också cookie-bannerns storlek och layout så att den blev mindre och mer diskret.
-
-Ändringarna gjordes i egna branches och skickades genom pull requests.
-
-### FE-46 – Dokumentera backend med Javadoc
-
-Jag dokumenterade de viktigaste delarna av auth-service med Javadoc.
-
-Jag lade till dokumentation i:
-
-- `AuthController`
-- `AuthService`
-- `JwtService`
-
-Dokumentationen beskriver vad klasserna och metoderna gör samt relevanta parametrar, returvärden och fel.
-
-### Utmaningar och lösningar
-
-En stor utmaning var att auth-service på Render först använde fel databaskonfiguration och inte PostgreSQL som tänkt.
-
-Jag kontrollerade environment variables och Spring-konfigurationen tills loggarna visade att PostgreSQL användes korrekt.
-
-Lokalt fick jag också problem med H2-databasen där tabeller försvann.
-
-Jag kontrollerade local-profilen och justerade databaskonfigurationen så att den lokala miljön fungerade igen.
-
-En annan utmaning var JWT-verifieringen mellan product-service och auth-service.
-
-Genom att läsa loggarna kunde jag se att problemet handlade om JWKS. Jag testade endpointen separat och kunde sedan verifiera att kommunikationen fungerade.
-
-Jag arbetade även med felsökning av orderflödet och kontrollerade varje del steg för steg för att hitta var felet låg.
+Nästa steg var att kontrollera Gateway-konfigurationen och loggarna i Render.
 
 ### Samarbete och agilt arbete
 
-Under den sista sprinten fokuserade vi mycket på att få alla delar av systemet att fungera tillsammans inför redovisningen.
+Under sprinten lärde jag mig att det är viktigt att testa webbshoppen som en helhet.
 
-När jag hittade problem i en tjänst som någon annan ansvarade för försökte jag först identifiera problemet och sedan informera den ansvariga personen istället för att ändra deras kod utan samordning.
+Även om en funktion fungerar lokalt kan det uppstå problem när frontend och backend körs på olika tjänster.
 
-Jag använde branches och pull requests för frontendändringarna eftersom `main` var skyddad.
+Jag arbetade steg för steg för att undersöka felet och få fram information som kunde hjälpa oss att lösa problemet.
 
-Jag arbetade iterativt genom att göra en mindre ändring i taget, testa den och därefter committa eller skapa en pull request när funktionen fungerade.
-
-Vi hjälptes åt att felsöka integrationen mellan tjänsterna och prioriterade det som behövde bli klart inför presentationen.
+Jag lärde mig också vikten av att dokumentera fel, prioritera viktiga problem och följa upp dem i kommande sprintar.
 
 ---
 
-# Sammanfattning av vad jag har lärt mig
+# Sammanfattning av mitt individuella arbete
 
-Under projektet har jag fått en mycket bättre förståelse för hur ett system med flera mikrotjänster fungerar.
+Under projektet Agil Webbshop har jag arbetat med flera olika delar av frontend och fått bättre förståelse för hur en webbapplikation fungerar.
 
-Jag har lärt mig mer om:
+Mina viktigaste arbetsuppgifter har varit:
 
-- Spring Boot och mikrotjänster
-- autentisering med JWT
-- roller och behörighet
-- JWKS och verifiering av JWT mellan tjänster
-- H2 för lokal utveckling
-- PostgreSQL i produktionsmiljö
-- deployment på Render
-- hur en gateway fungerar mellan frontend och backend
-- React och kommunikation mellan frontend och backend
-- cookies och `localStorage`
-- integrationstestning med Vitest, React Testing Library och MSW
-- Git, branches, commits och pull requests
-- felsökning med loggar, DevTools och API-anrop
-- hur externa betalningslösningar som Klarna och Swish kan undersökas inför en framtida integration
+- Utveckling och förbättring av frontend i React.
+- Arbete med autentisering och inloggning via auth-service.
+- Hantering av användarroller som ADMIN och USER.
+- Borttagning av en dubbel logout-knapp.
+- Funktion för att visa produktdetaljer när användaren klickar på en produkt.
+- Funktion för att admin ska kunna ladda upp produktbilder.
+- Undersökning av betalningslösningarna Stripe, Klarna och Swish.
+- Arbete med automatiserade tester med Vitest och MSW.
+- Felsökning av API-anrop och HTTP-status 429.
 
-En av de viktigaste sakerna jag har lärt mig är att det inte räcker att varje mikrotjänst fungerar separat. Alla delar måste också kunna kommunicera korrekt med varandra för att hela systemet ska fungera.
+Jag har utvecklat mina kunskaper inom React, autentisering, API-kommunikation, testning och felsökning.
 
-Jag har också blivit bättre på felsökning. Istället för att ändra flera saker samtidigt har jag lärt mig att testa en del i taget, läsa loggar och stegvis hitta var ett problem ligger.
+Jag har också lärt mig mer om agilt arbete, planering och hur viktigt det är att samarbeta i ett projekt där frontend och backend är beroende av varandra.
 
-Projektet har dessutom gett mig en bättre förståelse för agilt arbete. Genom sprintplanering, dagliga avstämningar, sprint review och retro har jag lärt mig att planera mitt arbete, kommunicera problem tidigt och anpassa arbetet när något tar längre tid än förväntat.
+# Vad jag har lärt mig och vill förbättra
 
-Jag har även fått erfarenhet av att samarbeta i ett projekt där olika personer ansvarar för olika delar. När ett problem har legat i en annan mikrotjänst har jag lärt mig att kommunicera med den ansvariga personen och samarbeta kring lösningen istället för att göra ändringar utan samordning.
+Det viktigaste jag har lärt mig är att programmering inte bara handlar om att skriva kod utan också om att förstå problem, testa lösningar och förbättra funktioner.
+
+Jag har blivit bättre på att undersöka hur olika delar av en webbapplikation fungerar tillsammans.
+
+Jag har också förstått varför tester är viktiga och hur verktyg som Vitest och MSW kan hjälpa oss att upptäcka problem tidigare.
+
+Genom betalningsundersökningen har jag fått förståelse för hur externa betaltjänster kan integreras i en webbshop.
+
+Framöver vill jag bli ännu bättre på React, API-integrationer och automatiserade tester. Jag vill också utveckla min förmåga att självständigt felsöka problem och hitta lösningar.
